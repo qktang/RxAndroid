@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    tools:context=".ui.main.login.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/login_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/member_login" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trans_white_stroke_bg">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/login_name" />
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="248dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:hint="account"
+                android:paddingLeft="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#cbc8c8"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/trans_white_stroke_bg">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/login_pwd" />
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="248dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#cbc8c8"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/trans_white_stroke_bg"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
